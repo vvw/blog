@@ -6,6 +6,7 @@ import Data.List            (isPrefixOf)
 import Data.Monoid            (mappend)
 import Data.Text            (pack,unpack,replace,empty)
 import System.FilePath        (takeFileName)
+import Text.Pandoc
 
 import Hakyll
 
@@ -31,16 +32,16 @@ main = hakyll $ do
         compile copyFileCompiler
 
     -- About & Contact Page
-    match (fromList ["about.md", "contact.md"]) $ do
+    match (fromList ["contact.md"]) $ do
         route   $ setExtension "html"
-        compile $ pandocCompiler
+        compile $ pandocMathCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
     -- Render posts
     match "posts/*" $ do
         route $ setExtension "html"
-        compile $ pandocCompiler
+        compile $ pandocMathCompiler
             >>= loadAndApplyTemplate "templates/post.html"    (tagsCtx tags)
             >>= (externalizeUrls $ feedRoot feedConfiguration)
             >>= saveSnapshot "content"
@@ -61,7 +62,7 @@ main = hakyll $ do
 
 
     -- Home Page
-    match "index.html" $ do
+    create ["index.html"] $ do
         route idRoute
         compile $ do
             posts <- postList tags "posts/*" (fmap (take 10) . recentFirst)
@@ -126,6 +127,7 @@ feedCtx :: Context String
 feedCtx =
     bodyField "description" `mappend`
     postCtx
+
 --------------------------------------------------------------------------------
 
 -- Configuration
@@ -139,7 +141,13 @@ feedConfiguration = FeedConfiguration
     , feedRoot        = "http://yinyanghu.github.io"
     }
 
-
+pandocMathCompiler = pandocCompilerWith readers writers
+    where
+        readers = def { readerExtensions = pandocExtensions }
+        writers = def {
+            writerHTMLMathMethod = MathJax "",
+            writerHtml5 = True
+        }
 
 externalizeUrls :: String -> Item String -> Compiler (Item String)
 externalizeUrls root item = return $ fmap (externalizeUrlsWith root) item

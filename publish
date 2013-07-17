@@ -1,4 +1,6 @@
 #!/bin/bash
 
+mv Publish/.git Git
 rm -rf Publish/*
 cp -R _site/* Publish/
+mv Git Publish/.git
