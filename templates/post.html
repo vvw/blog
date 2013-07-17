@@ -1,8 +1,11 @@
-<div class="info">
-    Posted on $date$
-    $if(author)$
-        by $author$
-    $endif$
-</div>
+<article>
+	<header>
+		<h1>$title$</h1>
+		<p class="by">by <em>$author$</em> on <strong>$date$</strong></p>
+		<p>Tags: $prettytags$.</p>
+	</header>
 
-$body$
+	<section>
+		$body$
+	</section>
+</article>

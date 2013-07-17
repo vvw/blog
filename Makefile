@@ -17,4 +17,6 @@ check: build
 	./elixir check
 
 clean: 
+	./elixir clean
 	rm -f elixir
+	rm -f elixir.hi elixir.o

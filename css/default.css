@@ -67,26 +67,26 @@ body>header a, body>header a:hover {
     text-decoration: none;
 }
 
-.posts-list ul {
+.archive ul {
     padding-left: 1em;
 }
 
-.posts-list>h1, .posts-list>h2 {
+.archive>h1, .archive>h2 {
     margin-bottom: 0;
     margin-top: 1em;
 }
 
-.posts-list li {
+.archive li {
     list-style: square inside;
     padding: 0.1em 0.5em;
 }
 
-.posts-list li>a {
+.archive li>a {
     font-size: 1.1em;
     text-decoration: none;
 }
 
-.posts-list li>em {
+.archive li>em {
     font-size: 0.9em;
 }
 
