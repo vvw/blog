@@ -1,0 +1,203 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: fig2dev Version 3.2 Patchlevel 5 -->
+<!-- CreationDate: Sun Nov 25 11:05:50 2007 -->
+<!-- Magnification: 1.050 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="5.1in" height="1.4in" viewBox="1499 2749 6166 1707">
+<g style="stroke-width:.025in; stroke:black; fill:none">
+<!-- Line -->
+<polyline points="7275,3543
+7275,4204
+" style="stroke:#000000;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line -->
+<polyline points="7181,4251
+7181,3590
+" style="stroke:#000000;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Circle -->
+<circle cx="1795" cy="3023" r="188"
+ style="stroke:#000000;stroke-width:8;"/>
+<!-- Line -->
+<polyline points="1511,3401
+2078,3401
+" style="stroke:#000000;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line -->
+<polyline points="1511,4251
+1795,3779
+2078,4251
+" style="stroke:#000000;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line -->
+<polyline points="1795,3212
+1795,3779
+" style="stroke:#000000;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line -->
+<polygon points="2173,3212
+1984,3685
+2362,3685
+2551,3212
+2173,3212
+" style="stroke:#000000;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line -->
+<polyline points="2173,3307
+2456,3307
+" style="stroke:#000000;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line -->
+<polyline points="2173,3401
+2362,3401
+" style="stroke:#000000;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line -->
+<polyline points="2173,3590
+2267,3590
+" style="stroke:#000000;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Arc -->
+<path style="stroke:#000000;stroke-width:8;stroke-linecap:butt;"
+d="M 7181,4251 A 74 74  0  0  0  7275  4204 " />
+<!-- Line -->
+<polyline points="6708,3070
+6708,3543
+7086,3637
+7086,3165
+" style="stroke:#000000;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line -->
+<polygon points="6708,3070
+7086,3165
+7653,2976
+7275,2881
+6708,3070
+" style="stroke:#000000;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line -->
+<polygon points="6803,3212
+6992,3259
+6992,3307
+6803,3259
+6803,3212
+" style="stroke:#000000;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line -->
+<polyline points="7086,3637
+7653,3448
+7653,2976
+" style="stroke:#000000;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+fill:#ffffff;
+"/>
+<!-- Arc -->
+<path style="stroke:#000000;stroke-width:8;stroke-linecap:butt;"
+d="M 3401,3118 A 6283 6283  0  0  1  5574  3118 " />
+<!-- Arrowhead on XXXpoint 5435 3095 - 5574 3118-->
+<polygon points="5427 3125
+5558 3114
+5438 3062
+5427 3125
+
+" style="stroke:#000000;stroke-width:8;
+fill:#000000;"/>
+<!-- Arc -->
+<path style="stroke:#000000;stroke-width:8;stroke-linecap:butt;"
+d="M 5574,3496 A 6283 6283  0  0  0  3401  3496 " />
+<!-- Arrowhead on XXXpoint 3541 3472 - 3401 3496-->
+<polygon points="3537 3440
+3418 3492
+3547 3503
+3537 3440
+
+" style="stroke:#000000;stroke-width:8;
+fill:#000000;"/>
+<!-- Arc -->
+<path style="stroke:#000000;stroke-width:8;stroke-linecap:butt;"
+d="M 5574,3118 A 236 236  0  0  1  5574  3496 " />
+<!-- Arrowhead on XXXpoint 5657 3380 - 5574 3496-->
+<polygon points="5631 3361
+5584 3482
+5682 3398
+5631 3361
+
+" style="stroke:#000000;stroke-width:8;
+fill:#000000;"/>
+<!-- Arc -->
+<path style="stroke:#000000;stroke-width:8;stroke-linecap:butt;"
+d="M 3401,3874 A 6283 6283  0  0  1  5574  3874 " />
+<!-- Arrowhead on XXXpoint 5435 3850 - 5574 3874-->
+<polygon points="5427 3881
+5558 3870
+5438 3818
+5427 3881
+
+" style="stroke:#000000;stroke-width:8;
+fill:#000000;"/>
+<!-- Arc -->
+<path style="stroke:#000000;stroke-width:8;stroke-linecap:butt;"
+d="M 5574,4251 A 6283 6283  0  0  0  3401  4251 " />
+<!-- Arrowhead on XXXpoint 3541 4228 - 3401 4251-->
+<polygon points="3537 4196
+3418 4248
+3547 4259
+3537 4196
+
+" style="stroke:#000000;stroke-width:8;
+fill:#000000;"/>
+<!-- Arc -->
+<path style="stroke:#000000;stroke-width:8;stroke-linecap:butt;"
+d="M 3401,3496 A 236 236  0  0  0  3401  3874 " />
+<!-- Arrowhead on XXXpoint 3318 3758 - 3401 3874-->
+<polygon points="3292 3776
+3392 3860
+3343 3739
+3292 3776
+
+" style="stroke:#000000;stroke-width:8;
+fill:#000000;"/>
+<!-- Arc -->
+<path style="stroke:#000000;stroke-width:8;stroke-linecap:butt;"
+d="M 5574,3874 A 236 236  0  0  1  5574  4251 " />
+<!-- Arrowhead on XXXpoint 5657 4136 - 5574 4251-->
+<polygon points="5631 4117
+5584 4238
+5682 4154
+5631 4117
+
+" style="stroke:#000000;stroke-width:8;
+fill:#000000;"/>
+<!-- Text -->
+<text xml:space="preserve" x="3685" y="2929" stroke="#000000" fill="#000000"  font-family="Helvetica" font-style="normal" font-weight="normal" font-size="152" text-anchor="start">1. request service</text>
+<!-- Text -->
+<text xml:space="preserve" x="3874" y="3307" stroke="#000000" fill="#000000"  font-family="Helvetica" font-style="normal" font-weight="normal" font-size="152" text-anchor="start">3. challenge</text>
+<!-- Text -->
+<text xml:space="preserve" x="3779" y="4062" stroke="#000000" fill="#000000"  font-family="Helvetica" font-style="normal" font-weight="normal" font-size="152" text-anchor="start">7. grant service</text>
+<!-- Text -->
+<text xml:space="preserve" x="3874" y="3685" stroke="#000000" fill="#000000"  font-family="Helvetica" font-style="normal" font-weight="normal" font-size="152" text-anchor="start">5. response</text>
+<!-- Text -->
+<text xml:space="preserve" x="5763" y="4062" stroke="#000000" fill="#000000"  font-family="Helvetica" font-style="normal" font-weight="normal" font-size="152" text-anchor="start">6. verify</text>
+<!-- Text -->
+<text xml:space="preserve" x="2551" y="3685" stroke="#000000" fill="#000000"  font-family="Helvetica" font-style="normal" font-weight="normal" font-size="152" text-anchor="start">4. solve</text>
+<!-- Text -->
+<text xml:space="preserve" x="2362" y="4440" stroke="#000000" fill="#000000"  font-family="Helvetica" font-style="normal" font-weight="bold" font-size="177" text-anchor="start">Client</text>
+<!-- Text -->
+<text xml:space="preserve" x="5716" y="3212" stroke="#000000" fill="#000000"  font-family="Helvetica" font-style="normal" font-weight="normal" font-size="152" text-anchor="start">2. choose</text>
+<!-- Text -->
+<text xml:space="preserve" x="6283" y="4440" stroke="#000000" fill="#000000"  font-family="Helvetica" font-style="normal" font-weight="bold" font-size="177" text-anchor="start">Server</text>
+</g>
+</svg>

@@ -22,7 +22,7 @@ main = hakyll $ do
         compile compressCssCompiler
 
     -- Copy images
-    match "images/*" $ do
+    match ("images/*" .||. "images/*/*") $ do
         route   idRoute
         compile copyFileCompiler
 
