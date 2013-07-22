@@ -26,12 +26,17 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
-    -- Copy about
+    -- Copy files
+    match ("files/*") $ do
+        route   idRoute
+        compile copyFileCompiler
+
+    -- Copy About Page
     match ("about/*" .||. "about/*/*") $ do
         route   idRoute
         compile copyFileCompiler
 
-    -- About & Contact Page
+    -- Contact Page
     match (fromList ["contact.md"]) $ do
         route   $ setExtension "html"
         compile $ pandocMathCompiler

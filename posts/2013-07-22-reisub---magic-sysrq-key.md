@@ -1,12 +1,12 @@
 ---
 title: REISUB - Magic SysRq key
 author: Yinyanghu
-tags: Linux, Keyboard, OS
+tags: Linux, Keyboard, OS, CS
 ---
 
 常见的104-Key的Keyboard上其实有些Key我们几乎不使用，例如SysRq, ScrollLock。尽管现在已经不怎么使用，但是它们依然存在，因为它们在历史上曾经风光一时。今天我们就来说说SysRq的故事。
 
-![](http://upload.wikimedia.org/wikipedia/commons/2/22/KeyboardWithPrintScreenRinged.svg "104 Key Keyboard")
+![](/images/2013-07-22-reisub/A.svg "104 Key Keyboard")
 
 <br>
 
@@ -50,11 +50,11 @@ Linux不愧是世界上最优秀的OS Kernel之一！这帮老Geeks、老Hackers
 
 这仅仅是Magic SysRq Key的一小部分功能，全部功能列表请参见[这里](http://en.wikipedia.org/wiki/Magic_SysRq_key)。如何快速的记住这几个Key呢？Geek们提供了诸多方法：
 
-> "Raising Elephants Is So Utterly Boring"
+> "**R**aising **E**lephants **I**s **S**o **U**tterly **B**oring"
 
-> "Reboot Even If System Utterly Broken"
+> "**R**eboot **E**ven **I**f **S**ystem **U**tterly **B**roken"
 
-> "simply the word _BUSIER_ read backwards"
+> "simply the word **_BUSIER_** read backwards"
 
 
 除了通过SysRq Key可以调用Magic SysRq Key，还有另外一种方法
