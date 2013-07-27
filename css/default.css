@@ -107,6 +107,11 @@ article>header p.by {
     padding-top: 0.5em;
 }
 
+article>header p a {
+    text-decoration: none;
+    border-bottom: 1.5px dashed #888888;
+}
+
 body>nav, body>footer {
     background-color: #BBBBBB;
     padding: 0.5em 0;
@@ -156,11 +161,16 @@ article h3 {
 }
 
 article p {
-    margin: 0.3em;
+    margin: 0.8em;
 }
 
 article section>p {
-    text-indent: 1em;
+    text-indent: 2em;
+}
+
+article section a {
+    text-decoration: none;
+    border-bottom: 1.5px dashed #888888;
 }
 
 code {
@@ -188,5 +198,5 @@ body>footer {
 }
 
 blockquote {
-    background: #BBBBBB;
+    background: #D2D2D2;
 }
