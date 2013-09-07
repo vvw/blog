@@ -18,6 +18,8 @@ C language之父 大师K&R写的书 自然要怀着一种崇敬的心来阅读�
 
 向Kernighan和Ritchie两位大师致敬
 
+![](/images/2013-09-01-c/book.png "The C Programming Language")
+
 <br />
 
 ## Chapter 1: A Tutorial Introduction
