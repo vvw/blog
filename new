@@ -18,6 +18,10 @@ author: $author
 tags:
 ---
 
+---
+
+☯ Yinyanghu, 2013
+
 EOF
 
 vim "posts/"$filename
