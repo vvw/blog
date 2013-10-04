@@ -10,6 +10,8 @@ title: Contact
 
 * <img src="/images/douban.png" width=16 height=16 alt="Douban" /> 豆瓣Douban: [阴阳糊](http://www.douban.com/people/lijian_coral)
 
+* [LinkedIn](http://www.linkedin.com/pub/jian-li/26/8b2/295)
+
 * <img src="/images/tumblr.png" width=16 height=16 alt="Tumblr" /> Tumblr: [yinyanghu](http://yinyanghu.tumblr.com)
 
 * <img src="/images/icq.png" width=16 height=16 alt="ICQ" /> ICQ: 676714828
