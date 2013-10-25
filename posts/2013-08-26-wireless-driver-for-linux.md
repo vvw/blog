@@ -4,7 +4,7 @@ author: Yinyanghu
 tags: Wireless, Linux, Driver, Archlinux
 ---
 
-## Linux Device Driver
+# Linux Device Driver
 
 ---
 
@@ -22,7 +22,7 @@ tags: Wireless, Linux, Driver, Archlinux
 
 <br />
 
-## Solution?
+# Solution?
 
 ---
 
@@ -49,21 +49,21 @@ tags: Wireless, Linux, Driver, Archlinux
 <br />
 
 
-## Wireless Driver
+# Wireless Driver
 
 ---
 
 竟然吐槽了这么多？汗。。。。。实在是按耐不住长期内心中压抑的不爽。正文现在开始！主要介绍两款WLAN Adapter，如果你碰巧拥有相同型号的Wireless Adapter并且被driver问题所困扰，可以参考下面的方法。
 
-#### Broadcom BCM43225
+## Broadcom BCM43225
 
 _(这个Adapter在Linux下貌似不支持AP Mode)_
 
-##### Ubuntu
+### Ubuntu
 
 如果我没有记错的话，Ubuntu 12.04, 12.10使用Broadcom STA driver `broadcom-wl`，机身上的WiFi指示灯也可以正常工作。
 
-##### Archlinux
+### Archlinux
 
 Archlinux紧追Linux Kernel的更新脚步，使用的是Open source kernel driver `brcmsmac`(也就是过去的`brcm80211`)。Linux 3.10之前的Kernel一直运行基本正常，偶尔在WiFi on/off的时候引起Kernel Panic。还有就是机身上WiFi指示灯永远不亮。。。
 
@@ -73,27 +73,27 @@ Archlinux紧追Linux Kernel的更新脚步，使用的是Open source kernel driv
 
 暂时解决问题的方法是rollback到Linux 3.9的版本上；或是暂时禁用brcmsmac module，使用外置USB WLAN Adapter。
 
-#### Realtek RTL8188CUS
+## Realtek RTL8188CUS
 
 _我购买的是TL-WN725N，貌似只有最早出场的一批用的是这个firmware_
 
-##### Raspberry Pi
+### Raspberry Pi
 
 当时之所以买这个WLAN Adapter，是为了在我的Raspberry Pi上使用；在[Raspbian](http://www.raspbian.org)上，该Adapter的driver很完善，AP, Ad-hoc, Infrastructure都运行良好。Raspberry Pi Forum上也有很多文章讨论这款Adapter。
 
 _P.S. 在Raspberry Pi上如果热插拔会导致restart_
 
-##### Ubuntu
+### Ubuntu
 
 貌似Ubuntu上该Adapter即插即用，完全没有问题，不过要开启AP mode还需要折腾一下。
 
-##### Archlinux
+### Archlinux
 
 Realtek官网上提供的official driver由于只支持到Linux 3.0，现在source code已经无法正常`make`了；并且如果使用Linux的`rtl8192cu` module，会出现能扫描到周围WiFi却连接不上的尴尬情况；幸运的是，在AUR中，刚刚(本文写的前一天晚上)有人更新了这个driver，所以只需要`yaourt dkms-8192cu`即可。这个driver相当给力，即使离AP很远，信号强度也能保持150Mb/s，当然也可能是由于Adapter和AP都是TP-Link产品的缘故。（有文章提到过，使用一家厂商生产出来的Adapter和AP可以使速率更高、信号强度更好）
 
 _P.S. 热插拔会导致Kernel Panic_
 
-##### _P.S. Ndiswrapper对于这两款Adapter都不能正常工作，并且RTL8188CUS还会引起Kernel Panic，所以尽量还是不要使用Ndiswrapper。_
+#### _P.S. Ndiswrapper对于这两款Adapter都不能正常工作，并且RTL8188CUS还会引起Kernel Panic，所以尽量还是不要使用Ndiswrapper。_
 
 ---
 

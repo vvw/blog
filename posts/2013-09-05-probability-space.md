@@ -4,7 +4,7 @@ author: Yinyanghu
 tags: Probability, Mathematics, Theory, TCS
 ---
 
-## Probability Space
+# Probability Space
 
 ---
 
@@ -36,7 +36,7 @@ The axiom foundation of probability theory is laid by [Kolmogorov](http://en.wik
 
 <br />
 
-## Reference
+# Reference
 
 ---
 

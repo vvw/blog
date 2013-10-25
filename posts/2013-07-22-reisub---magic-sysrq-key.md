@@ -10,7 +10,7 @@ tags: Linux, Keyboard, OS, CS
 
 <br>
 
-## History
+# History
 
 ---
 
@@ -20,7 +20,7 @@ SysRq的全称是[System Request](http://en.wikipedia.org/wiki/System_request)�
 
 <br>
 
-## Magic SysRq Key
+# Magic SysRq Key
 
 ---
 
@@ -67,7 +67,7 @@ echo b > /proc/sysrq-trigger
 
 <br>
 
-## Reference
+# Reference
 
 ---
 

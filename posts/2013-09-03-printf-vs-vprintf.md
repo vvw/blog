@@ -6,13 +6,17 @@ tags: C, Programming
 
 `printf`, `fprintf`, `sprintf`这三个`stdio.h`中常用的Formatted Output Function想必大家并不陌生 其实在这三个function的背后 还有三个function 分别为`vprintf`, `vfprintf`, `vsprintf`
 
+# Question
+
+---
+
 **它们是做什么用的?**
 
 **与`printf`, `vfprintf`, `vsprintf`又有什么区别与联系?**
 
 <br />
 
-## Answer
+# Answer
 
 ---
 
@@ -43,7 +47,7 @@ int error(char *fmt, ...)
 
 <br />
 
-## Reference
+# Reference
 
 ---
 

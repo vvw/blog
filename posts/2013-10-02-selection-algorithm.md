@@ -18,17 +18,17 @@ We introduce some algorithms for solving the selection problem.
 
 <br />
 
-## Sorting \& Partial Sorting
+# Sorting \& Partial Sorting
 
 ---
 
-### Selection by sorting
+## Selection by sorting
 
 The simplest idea for the selection problem is sorting the list or array and then selecting any desired element. Generally, the sorting algorithm is based on the comparison. The lower bound of the comparsion-based sorting algorithm is $\mathcal{O}(N\log N)$. Quicksort is a good choice!
 
 However, the naive algorithm doesn't means useless. In fact, this algorithm is an online algorithm with $\mathcal{O}(N \log N)$ - Preprocessing time and $\mathcal{O}(1)$ - Querying time. Furthermore, if we need *Insert* operation, we could maintain the structure using Insertion Sorting.
 
-### Selection by partial sorting
+## Selection by partial sorting
 
 In computer science, partial sorting is a relaxed variant of the sorting algorithm. Partial sorting is returning a list of the $K$ smallest(or largest) elements in order.
 
@@ -46,7 +46,7 @@ Since we can build a heap in $\mathcal{O}(N)$ time, getting the $K$ smallest(lar
 
 <br />
 
-## Quickselect
+# Quickselect
 
 ---
 
@@ -58,7 +58,7 @@ The performance is directly impacted by the choice of pivot. The easiest solutio
 
 <br />
 
-## Median of Medians
+# Median of Medians
 
 ---
 
@@ -68,11 +68,11 @@ The algorithm consists of an algorithm to find an approximate median in linear t
 
 **The approximate median-selection algorithm can also be used as a pivot strategy in Quicksort, yielding an optimal algorithm, with worst-case complexity $\mathcal{O}(N \log N)$.**
 
-#### Algorithm
+### Algorithm
 
 The algorithm divides the list into groups of five elements. Then, for each group of five, the median is calculated. These medians construct a sublist of $N / 5$ elements. And then recursively find the median on this sublist. Finally, the "median of medians" is chosen to be the pivot and continue to find the median using Quickselect.
 
-#### Analysis
+### Analysis
 
 * Pivot $x$
 
@@ -106,7 +106,7 @@ Therefore, $T(N) = \mathcal{O}(N)$
 
 <br />
 
-## LazySelect
+# LazySelect
 
 ---
 
@@ -136,7 +136,7 @@ The parameters to be fixed are, the size of $R$(small enough to sort in linear t
 
 **We choose the size of $R$ as $n^{3/4}$, and $d$ and $u$ are within $\sqrt{n}$ range around the median of $R$**
 
-#### Algorithm: LazySelect
+### Algorithm: LazySelect
 
 > **Input**: a set $S$ of $n$ elements over totally ordered domain.
 > 
@@ -150,7 +150,7 @@ The parameters to be fixed are, the size of $R$(small enough to sort in linear t
 > 
 > 5. Sort $C$ and return the $\left(\left\lfloor\frac{n}{2}\right\rfloor-r_d+1\right)$th element in the sorted order of $C$.
 
-#### Analysis
+### Analysis
 
 The algorithm always terminates in linear time because each line of the algorithm costs at most linear time. The last three line guarantees that the algorithm returns the correct median if it does not fail.
 
@@ -282,11 +282,11 @@ Therefore the algorithm always terminates in linear time and returns the correct
 
 <br />
 
-## History
+# History
 
 ---
 
-#### Randomized Algorithm
+## Randomized Algorithm
 
 * [1960' **Hoare**] **Quickselect**, expected running time is $\mathcal{O}(N)$
 
@@ -296,17 +296,17 @@ Therefore the algorithm always terminates in linear time and returns the correct
 
     $\#$comparison: $1.5N + \mathcal{o}(N)$ expected
 
-##### Lower Bound
+#### Lower Bound
 
 * [1989' **Munro, Cunto**]
 
     Any randomized algorithm(based on comparison) takes at least $1.5N + \mathcal{o}(N)$ expected $\#$comparisons
 
-#### Non-randomized Algorithm
+## Non-randomized Algorithm
 
 * [1973' **BFPRT**] **Median of medians**, non-randomized selection in $O(N)$ time
 
-##### Upper Bound
+#### Upper Bound
 
 * [1973' **BFPRT**] $5.43N + \mathcal{o}(N)$
 
@@ -314,7 +314,7 @@ Therefore the algorithm always terminates in linear time and returns the correct
 
 * [1995' **Dor, Zwick**] $2.95N$
 
-##### Lower Bound
+#### Lower Bound
 
 * [1973' **BFPRT**] $1.5N - \mathcal{O}(1)$
 
@@ -324,7 +324,7 @@ Therefore the algorithm always terminates in linear time and returns the correct
 
 * [1996' **Dor, Zwick**] $(2 + \epsilon)N$, $\epsilon = 2^{-80}$
 
-#### Conclusion
+## Conclusion
 
 * Randomization provably helps!
 
@@ -332,7 +332,7 @@ Therefore the algorithm always terminates in linear time and returns the correct
 
 <br />
 
-## Lower Bound
+# Lower Bound
 
 ---
 
@@ -352,7 +352,7 @@ Therefore the algorithm always terminates in linear time and returns the correct
 
 <br />
 
-## Reference
+# Reference
 
 ---
 

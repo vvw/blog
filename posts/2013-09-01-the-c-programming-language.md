@@ -4,7 +4,7 @@ author: Yinyanghu
 tags: C, Unix, Book, Note, Ritchie, Kernighan, Programming
 ---
 
-## Overture
+# Overture
 
 ---
 
@@ -22,13 +22,13 @@ C language之父 大师K&R写的书 自然要怀着一种崇敬的心来阅读�
 
 <br />
 
-## Chapter 1: A Tutorial Introduction
+# Chapter 1: A Tutorial Introduction
 
 ---
 
-# `main()`: undeclared return type are taken as `int`
+#### `main()`: undeclared return type are taken as `int`
 
-# `printf`
+#### `printf`
 
 * Error
 
@@ -40,23 +40,23 @@ C language之父 大师K&R写的书 自然要怀着一种崇敬的心来阅读�
 * Using `\` at the end of line
 
 
-# [Magic Number](http://en.wikipedia.org/wiki/Magic_number_(programming))
+#### [Magic Number](http://en.wikipedia.org/wiki/Magic_number_(programming))
 
-# `getchar()`, `putchar()`
+#### `getchar()`, `putchar()`
 
-# `A = B = C = 0` <==> `(A = (B = (C = 0)))`
+#### `A = B = C = 0` <==> `(A = (B = (C = 0)))`
 
 <br />
 
-## Chapter 2 - Types, Operators and Expressions
+# Chapter 2 - Types, Operators and Expressions
 
 ---
 
-# Variable Names
+#### Variable Names
 
 * At least the first 31 characters of an internal name are significant. For function names and external variables, the number may be less than 31, because external names may be used by assemblers and loaders over which the language has no control. For external names, the standard guarantees uniqueness only for 6 characters and a single case.
 
-# Constants
+#### Constants
 
 * An integer constant like `1234` is an `int`. A `long` constant is written with a terminal `l` or `L` , as in `123456789L`; an integer constant too big to fit into an `int` will also be taken as a long. Unsigned constants are written with a terminal `u` or `U`, and the suffix `ul` or `UL` indicates `unsigned long`.
 
@@ -64,13 +64,13 @@ C language之父 大师K&R写的书 自然要怀着一种崇敬的心来阅读�
 
 * Certain characters can be represented in character and string constants by escape sequences like `\n`(newline); these sequences look like two characters, but represent only one. In addition, an arbitrary byte-sized bit pattern can be specified by `\ooo` where `ooo` is one to three octal digits or by `\xhh` where `hh` is one or more hexadecimal digits.
 
-# `"A""B"` <==> `"AB"`
+#### `"A""B"` <==> `"AB"`
 
-# `'A'` vs. `"A"`
+#### `'A'` vs. `"A"`
 
 Integer vs. Array of Char
 
-# Program Style
+#### Program Style
 
 * `if (!valid)` is better than `if (valid == 0)`
 
@@ -82,11 +82,11 @@ Integer vs. Array of Char
     }
     ```
 
-# Arithmetic shift vs. Logical shift
+#### Arithmetic shift vs. Logical shift
 
-# Type Conversion: narrower --> wider
+#### Type Conversion: narrower --> wider
 
-# Implicit Arithmetic Conversion
+#### Implicit Arithmetic Conversion
 
 * An example
 
@@ -95,13 +95,13 @@ Integer vs. Array of Char
     -1L > 1UL
     ```
 
-# Cast: `(type)expression`
+#### Cast: `(type)expression`
 
-# [EBCDIC Character Set](http://en.wikipedia.org/wiki/EBCDIC)
+#### [EBCDIC Character Set](http://en.wikipedia.org/wiki/EBCDIC)
 
-# random: `rand()` and `srand()`
+#### random: `rand()` and `srand()`
 
-# Bitwise Operation
+#### Bitwise Operation
 
 * GetBits
 
@@ -129,21 +129,21 @@ Integer vs. Array of Char
 
     Deletes the rightmost 1-bit in x
 
-# Side Effects
+#### Side Effects
 
 * `a[i] = i++;`
 
 <br />
 
-## Chapter 3 - Control Flow
+# Chapter 3 - Control Flow
 
 ---
 
-# `,` vs. `;`
+#### `,` vs. `;`
 
 * In C, the semicolon is a statement terminator, rather than a separator as it is in languages like Pascal.
 
-# Binary Search
+#### Binary Search
 
 ```c
 /* binsearch: find x in v[0] <= v[1] <= ... <= v[n - 1] */
@@ -165,9 +165,9 @@ int binsearch(int x, int v[], int n)
 }
 ```
 
-# Cases serve just as labels
+#### Cases serve just as labels
 
-# ShellSort
+#### ShellSort
 
 ```c
 void shellsort(int v[], int n)
@@ -185,11 +185,11 @@ void shellsort(int v[], int n)
 
 <br />
 
-## Chapter 4 - Functions and Program Structure
+# Chapter 4 - Functions and Program Structure
 
 ---
 
-# The Minimal Function
+#### The Minimal Function
 
 * if the return type is omitted, `int` is assumed
 
@@ -197,17 +197,17 @@ void shellsort(int v[], int n)
     dummy() {}
     ```
 
-# No Return or `return;`
+#### No Return or `return;`
 
-# `int f() {}` vs. `int f(void) {}`
+#### `int f() {}` vs. `int f(void) {}`
 
-# External Linkage
+#### External Linkage
 
-# Definition vs. Declaration
+#### Definition vs. Declaration
 
-# Array sizes must be specified with the definition, but are optional with an extern declaration
+#### Array sizes must be specified with the definition, but are optional with an extern declaration
 
-# External, Static and Register
+#### External, Static and Register
 
 * static
 
@@ -223,7 +223,7 @@ void shellsort(int v[], int n)
 
     * it is not possible to take the address of a register variable, regardless of whether the variable is actually placed in a register
 
-# Block Structure
+#### Block Structure
 
 * C is not a block-structured language in the sense of Pascal or similar languages, because functions may not be defined within other functions
 
@@ -231,7 +231,7 @@ void shellsort(int v[], int n)
 
 * an automatic variable declared and initialized in a block is initialized each time the block is entered (**Performance?**)
 
-# Initialization
+#### Initialization
 
 * In the absence of explicit initialization, external and static variables are guaranteed to be initialized to zero; automatic and register variables have undefined (i.e., garbage) initial values
 
@@ -240,7 +240,7 @@ void shellsort(int v[], int n)
 * For external and static variables, the initializer must be a constant expression; the initialization is done once, conceptionally before the program begins execution. For automatic and register variables, the initializer is not restricted to being a constant
 
 
-# Recursion: Quicksort
+#### Recursion: Quicksort
 
 ```c
 
@@ -271,7 +271,7 @@ void swap(int v[], int i, int j)
 
 ```
 
-# The C Preprocessor
+#### The C Preprocessor
 
 * include
 
@@ -323,7 +323,7 @@ void swap(int v[], int i, int j)
 
 <br />
 
-## Chapter 5 - Pointers and Arrays
+# Chapter 5 - Pointers and Arrays
 
 ---
 
@@ -331,14 +331,14 @@ Pointers are much used in C, partly because they are sometimes the only way to e
 
 `int *p;`: expression \*dp has values of `int`
 
-# Stack Idiom
+#### Stack Idiom
 
 ```c
 *p++ = val; /* push */
 val = *--p; /* pop */
 ```
 
-# Multi-dimensional Arrays
+#### Multi-dimensional Arrays
 
 ```c
 int f(int A[2][3]) {}
@@ -348,7 +348,7 @@ int f(int (*A)[3]) {}
 ```
 More generally, only the first dimension (subscript) of an array is free; all the others have to be specified.
 
-# Pointers vs. Multi-dimensional Arrays
+#### Pointers vs. Multi-dimensional Arrays
 
 ```c
 char *name[] = { "Illegal month", "Jan", "Feb", "Mar" };
@@ -356,7 +356,7 @@ char *name[] = { "Illegal month", "Jan", "Feb", "Mar" };
 char aname[][15] = { "Illegal month", "Jan", "Feb", "Mar" };
 ```
 
-# `argc` and `argv`
+#### `argc` and `argv`
 
 
 # Pointers to Functions
@@ -367,7 +367,7 @@ int *f(): /* f: function returning pointer to int */
 int (*pf)(); /* pf: pointer to function returning int */
 ```
 
-# Complicated Declarations
+#### Complicated Declarations
 
 * `char **p`: pointer to char
 * `int (*p)[10]`: pointer to array[10] of int
@@ -381,11 +381,11 @@ int (*pf)(); /* pf: pointer to function returning int */
 
 <br />
 
-## Chapter 6 - Structures
+# Chapter 6 - Structures
 
 ---
 
-# Initialize
+#### Initialize
 
 A structure can be initialized by following its definition with a list of initializers, each a constant expression, for the members:
 
@@ -395,17 +395,17 @@ struct maxpt = { 320, 200 };
 
 An automatic structure may also be initialized by assignment or by calling a function that returns a structure of the right type.
 
-# Pointer
+#### Pointer
 
 `(*p).x` <==> `p -> x`
 
-# Self-referential Structures
+#### Self-referential Structures
 
 * Binary Tree
 
 * Hash Table
 
-# Typedef
+#### Typedef
 
 interpreted by the compiler, it can cope with textual substitutions that are beyond the capabilities of the preprocessor
 
@@ -423,7 +423,7 @@ Why we use `typedef`:
 
 * to provide better documentation for a program
 
-# Union
+#### Union
 
 * A union may only be initialized with a value of the type of its first member
 
@@ -453,7 +453,7 @@ Why we use `typedef`:
         sin(u.nf.floatnode)
     ```
 
-# Bit-fields
+#### Bit-fields
 
 When storage space is at a premium, it may be necessary to pack several objects into a single machine word; one common use is a set of single-bit flags in applications like compiler symbol tables. Externally-imposed data formats, such as interfaces to hardware devices, also often require the ability to get at pieces of a word.
 
@@ -480,11 +480,11 @@ struct {
 
 <br />
 
-## Chapter 7 - Input and Output
+# Chapter 7 - Input and Output
 
 ---
 
-# Formatted Output - `printf`
+#### Formatted Output - `printf`
 
 Each conversion specification begins with a % and ends with a conversion character. Between the % and the conversion character there may be, in order:
 
@@ -500,17 +500,17 @@ Each conversion specification begins with a % and ends with a conversion charact
 
 `printf(s)` vs. `printf("%s", s)`
 
-# Variable-length Argument Lists
+#### Variable-length Argument Lists
 
-# Formatted Input - `scanf`
+#### Formatted Input - `scanf`
 
-# Exit
+#### Exit
 
 `exit` calls `fclose` for each open output file, to flush out any buffered output.
 
-# Miscellaneous Functions
+## Miscellaneous Functions
 
-##### String Operations
+#### String Operations
 
 In `<string.h>`
 
@@ -524,7 +524,7 @@ In `<string.h>`
 * `strchar(char *s, char c)`
 * `strrchr(char *s, char c)`
 
-##### Character Class Testing and Conversion
+#### Character Class Testing and Conversion
 
 In `<ctype.h>`
 
@@ -537,21 +537,21 @@ In `<ctype.h>`
 * `toupper(char c)`
 * `tolower(char c)`
 
-##### Ungetc
+#### Ungetc
 
 * `ungetc(int c, FILE *fp)`
 
-##### Command Execution
+#### Command Execution
 
 * `system(char *s)`
 
-##### Storage Management
+#### Storage Management
 
 * `void *malloc(size_t n)`
 * `void *calloc(size_t n, size_t size)`
 * `free(void *p)`
 
-##### Mathematical Functions
+#### Mathematical Functions
 
 In `<math.h>`
 
@@ -565,7 +565,7 @@ In `<math.h>`
 * `sqrt(x)`
 * `fabs(x)`
 
-##### Random Number Generation
+#### Random Number Generation
 
 In `<stdlib.h>`
 
@@ -576,7 +576,7 @@ The function `rand()` computes a sequence of pseudo-random integers in the range
 
 <br />
 
-## Chapter 8 - The UNIX System Interface
+# Chapter 8 - The UNIX System Interface
 
 ---
 
@@ -584,7 +584,7 @@ The function `rand()` computes a sequence of pseudo-random integers in the range
 * file descriptor
 * low level I/O - `read` and `write`
 
-# Open, Creat, Close, Unlink
+#### Open, Creat, Close, Unlink
 
 * `open` is rather like the `fopen`, except that instead of returning a file pointer, it returns a file descriptor, which is just an `int`
 
@@ -592,7 +592,7 @@ The function `rand()` computes a sequence of pseudo-random integers in the range
 
 * There is a limit (often about 20) on the number of files that a program may open simultaneously. Accordingly, any program that intends to process many files must be prepared to re-use file descriptors. The function `close(int fd)` breaks the connection between a file descriptor and an open file, and frees the file descriptor for use with some other file; it corresponds to `fclose` in the standard library except that there is no buffer to flush. Termination of a program via `exit` or return from the main program closes all open files.
 
-# Random Access - Lseek
+#### Random Access - Lseek
 
 The system call `lseek` provides a way to move around in a file without reading or writing any data:
 
@@ -604,29 +604,29 @@ sets the current position in the file whose descriptor is `fd` to `offset` , whi
 
 The standard library function `fseek` is similar to `lseek` except that the first argument is a `FILE *`
 
-# Listing Directories
+#### Listing Directories
 
-# A Storage Allocator
+#### A Storage Allocator
 
 <br />
 
-## Appendix
+# Appendix
 
 ---
 
-# Storage Class
+#### Storage Class
 
 * automatic: declaration within a block, `auto`, `register`
 
 * static: global declaration, `static`, `extern`
 
-# Integral Promotion and Integral Conversions
+#### Integral Promotion and Integral Conversions
 
-# Parameter vs. Argument
+#### Parameter vs. Argument
 
 The term argument is used for an expression passed by a function call; the term parameter is used for an input object (or its identifier) received by a function definition, or described in a function declaration
 
-# Comma Operator
+#### Comma Operator
 
 A pair of expressions separated by a comma is evaluated left-to-right, and the value of the left expression is discarded. The type and value of the result are the type and value of the right operand.
 
@@ -638,7 +638,7 @@ f(a, (t = 3, t + 2), c)
 
 has three arguments, the second of which has the value 5
 
-# Const and Volatile
+#### Const and Volatile
 
 The `const` and `volatile` properties are new with the ANSI standard. The purpose of `const` is to announce objects that may be placed in read-only memory, and perhaps to increase opportunities for optimization. The purpose of `volatile` is to force an implementation to suppress optimization that could otherwise occur.
 
@@ -653,7 +653,7 @@ The declarations declare an integer `i` and a pointer to an integer `pi` . The v
 
 The integer `ci` is constant, and may not be changed(though it may be initialized, as here.) The type of `pci` is "pointer to `const int`," and `pci` itself may be changed to point to another place, but the value to which it points may not be altered by assigning through `pci`.
 
-# Initialization
+#### Initialization
 
 * The initializer for a structure is either an expression of the same type, or a brace-enclosed list of initializers for its members in order. Unnamed bit-field members are ignored, and are not initialized. If there are fewer initializers in the list than members of the structure, the trailing members are initialized with 0. There may not be more initializers than members. Unnamed bit-field members are ignored,and are not initialized.
 
@@ -670,13 +670,13 @@ float y[4][3] = {
 ```
 initializes the first column of `y` and leaves the rest 0.
 
-# Type Equivalence
+#### Type Equivalence
 
 * Two type specifier lists are equivalent if they contain the same set of type specifiers, taking into account that some specifiers can be implied by others (for example, `long` alone implies `long int`). Structures, unions, and enumerations with different tags are distinct, and a tagless union, structure, or enumeration specifies a unique type.
 
 * Two types are the same if their abstract declarators, after expanding any `typedef` types, and deleting any function parameter specifiers, are the same up to the equivalence of type specifier lists. Array sizes and function parameter types are significant.
 
-# Function Definitions
+#### Function Definitions
 
 * New-style function
 
@@ -697,7 +697,7 @@ initializes the first column of `y` and leaves the rest 0.
     }
     ```
 
-# Preprocessing
+### Preprocessing
 
 Preprocessing itself takes place in several logically successive phases that may, in a particular implementation, be condensed.
 
@@ -712,7 +712,7 @@ Preprocessing itself takes place in several logically successive phases that may
 5. The result is translated, then linked together with other programs and libraries, by collecting the necessary programs and data, and connecting external functions and object references to their definitions
 
 
-##### define
+#### define
 
 Two special operators influence the replacement process.
 
@@ -735,30 +735,30 @@ the call `cat(var, 123)` yields `var123`. However, the call `cat(cat(1, 2), 3)` 
 
 things work more smoothly; `xcat(xcat(1, 2), 3)` does produce `123`, because the expansion of `xcat` itself does not involve the `##` operator.
 
-##### include
+#### include
 
 `#include <filename>` vs. `#include "filename"`
 
-# Line Control
+#### Line Control
 
 ```c
 # line constant "filename"
 # line constant
 ```
 
-# Error Generation
+#### Error Generation
 
 ```c
 # error ...
 ```
 
-# Pragmas
+#### Pragmas
 
 ```c
 # pragma ...
 ```
 
-# Null directive
+#### Null directive
 
 (no effect)
 
@@ -766,7 +766,7 @@ things work more smoothly; `xcat(xcat(1, 2), 3)` does produce `123`, because the
 #
 ```
 
-# Predefined names
+#### Predefined names
 
 * `__LINE__`: A decimal constant containing the current source line number
 * `__FILE__`: A string literal containing the name of the file being compiled
@@ -777,7 +777,7 @@ things work more smoothly; `xcat(xcat(1, 2), 3)` does produce `123`, because the
 
 <br />
 
-## Algorithms in this book
+# Algorithms in this book
 
 ---
 
@@ -793,7 +793,7 @@ things work more smoothly; `xcat(xcat(1, 2), 3)` does produce `123`, because the
 
 <br />
 
-## Good Examples
+# Good Examples
 
 ---
 
@@ -807,7 +807,7 @@ things work more smoothly; `xcat(xcat(1, 2), 3)` does produce `123`, because the
 
 <br />
 
-## Standard Library
+# Standard Library
 
 ---
 
