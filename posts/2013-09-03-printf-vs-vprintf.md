@@ -8,7 +8,7 @@ tags: C, Programming
 
 # Question
 
----
+-----
 
 **它们是做什么用的?**
 
@@ -18,7 +18,7 @@ tags: C, Programming
 
 # Answer
 
----
+-----
 
 在StackOverflow上 [Chris Lutz](http://stackoverflow.com/users/60777/chris-lutz)给了一个不错的答案:
 
@@ -49,12 +49,12 @@ int error(char *fmt, ...)
 
 # Reference
 
----
+-----
 
 * [Book] The C Programming Language (Second Edition) - *Kernighan & Ritchie*
 
-* StackOverflow: [what's the difference between the printf and vprintf function families, and when should I use one over the other?](http://stackoverflow.com/questions/1485805/whats-the-difference-between-the-printf-and-vprintf-function-families-and-when)
+* [StackOverflow: what's the difference between the printf and vprintf function families, and when should I use one over the other?](http://stackoverflow.com/questions/1485805/whats-the-difference-between-the-printf-and-vprintf-function-families-and-when)
 
----
+-----
 
 ☯ Yinyanghu, 2013

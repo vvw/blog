@@ -20,7 +20,7 @@ We introduce some algorithms for solving the selection problem.
 
 # Sorting \& Partial Sorting
 
----
+-----
 
 ## Selection by sorting
 
@@ -48,7 +48,7 @@ Since we can build a heap in $\mathcal{O}(N)$ time, getting the $K$ smallest(lar
 
 # Quickselect
 
----
+-----
 
 Linear performance can be archieved by a partition-based selection algorithm, most basically Quickselect. It was developed by Tony Hoare. It is almost the same with the Quicksort developed by Hoare as well.
 
@@ -60,7 +60,7 @@ The performance is directly impacted by the choice of pivot. The easiest solutio
 
 # Median of Medians
 
----
+-----
 
 To guarantee the worst case is still linear time for the selection problem, **BFPRT**(Blum, Floyd, Pratt, Riveest, Tarjan) use a more sophisticated pivot strategy.
 
@@ -108,7 +108,7 @@ Therefore, $T(N) = \mathcal{O}(N)$
 
 # LazySelect
 
----
+-----
 
 (From the [Etone's *Randomized Algorithm* lecture note](http://tcs.nju.edu.cn/wiki/index.php/%E9%9A%8F%E6%9C%BA%E7%AE%97%E6%B3%95\_(Fall\_2011)/Median\_Selection))
 
@@ -284,7 +284,7 @@ Therefore the algorithm always terminates in linear time and returns the correct
 
 # History
 
----
+-----
 
 ## Randomized Algorithm
 
@@ -334,7 +334,7 @@ Therefore the algorithm always terminates in linear time and returns the correct
 
 # Lower Bound
 
----
+-----
 
 > [1973' **BFPRT**] **Theorem**: Finding the median $m$ of $n$ elements takes $\geq 1.5n$ comparisons in worst case.
 
@@ -354,7 +354,7 @@ Therefore the algorithm always terminates in linear time and returns the correct
 
 # Reference
 
----
+-----
 
 * [Wikipedia: Selection Algorithm](http://en.wikipedia.org/wiki/Selection\_algorithm)
 
@@ -398,7 +398,7 @@ Therefore the algorithm always terminates in linear time and returns the correct
 
 <br />
 
----
+-----
 
 ☯ Yinyanghu, 2013
 

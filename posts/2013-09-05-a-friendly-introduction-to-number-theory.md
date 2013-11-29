@@ -8,7 +8,7 @@ tags: Book, Number Theory, Mathematics, Algorithm, Note
 
 # Theorems
 
----
+-----
 
 ### Theorem A: Fermat's Last Theorem
 
@@ -132,7 +132,7 @@ $$(x_0 + k \cdot \frac{b}{g})\cdot a + (y_0 - k \cdot \frac{a}{g}) \cdot b = ax_
 
 # Properties
 
----
+-----
 
 ### Property A: Euler's Phi Function
 
@@ -190,7 +190,7 @@ Since $P$ is a prime, the only number $k$ satisfying $k^2 \equiv 1 \pmod{P}$ is 
 
 # Conjectures
 
----
+-----
 
 ### Conjecture A: Goldbach's Conjecture
 
@@ -237,7 +237,7 @@ Since $P$ is a prime, the only number $k$ satisfying $k^2 \equiv 1 \pmod{P}$ is 
 
 # Algorithms
 
----
+-----
 
 ### Algorithm A: The Euclidean Algorithm
 
@@ -351,6 +351,6 @@ Let $n$ be an odd integer and write $n - 1 = 2^k\cdot q$ with odd $q$. If *both*
 
 (If $n$ is an odd composite number, then at least 75% of the numbers $a$ between 1 and $n - 1$ act as Miller-Rabin witnesses for $n$)
 
----
+-----
 
 ☯ Yinyanghu, 2013

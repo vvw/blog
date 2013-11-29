@@ -6,7 +6,7 @@ tags: Wireless, Linux, Driver, Archlinux
 
 # Linux Device Driver
 
----
+-----
 
 唉！Linux Kernel什么都好就是底层这些firmware driver实在是不给力，且不说性能不能完全发挥，还有糟糕的Power Management，甚至常常引起Kernel Panic。之所以出现这种情况，无外乎以下几点原因：
 
@@ -24,7 +24,7 @@ tags: Wireless, Linux, Driver, Archlinux
 
 # Solution?
 
----
+-----
 
 作为一个饱受Linux Driver问题困扰的Linux用户，我也来谈谈我是如何度过这艰难的岁月。
 
@@ -51,7 +51,7 @@ tags: Wireless, Linux, Driver, Archlinux
 
 # Wireless Driver
 
----
+-----
 
 竟然吐槽了这么多？汗。。。。。实在是按耐不住长期内心中压抑的不爽。正文现在开始！主要介绍两款WLAN Adapter，如果你碰巧拥有相同型号的Wireless Adapter并且被driver问题所困扰，可以参考下面的方法。
 
@@ -95,6 +95,6 @@ _P.S. 热插拔会导致Kernel Panic_
 
 #### _P.S. Ndiswrapper对于这两款Adapter都不能正常工作，并且RTL8188CUS还会引起Kernel Panic，所以尽量还是不要使用Ndiswrapper。_
 
----
+-----
 
 ☯ Yinyanghu, 2013

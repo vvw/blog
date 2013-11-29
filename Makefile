@@ -10,8 +10,8 @@ elixir: elixir.hs
 publish: build
 	./elixir deploy
 
-preview: build
-	./elixir preview -p 9876
+watch: build
+	./elixir watch -p 9876
 
 check: build
 	./elixir check

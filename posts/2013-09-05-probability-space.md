@@ -6,7 +6,7 @@ tags: Probability, Mathematics, Theory, TCS
 
 # Probability Space
 
----
+-----
 
 A probability space is a **triple** $(\Omega, \Sigma, \Pr)$
 
@@ -26,7 +26,7 @@ A probability space is a **triple** $(\Omega, \Sigma, \Pr)$
 
     * (K5) For a decreasing sequence of events $A_1 \supset A_2 \supset \cdots A_n \supset \cdots$ of events with $\displaystyle \bigcap_{n}A_n = \emptyset$, it holds that $\displaystyle \lim_{n \rightarrow \infty} \Pr(A_n) = 0 $
 
----
+-----
 
 The statements (K1) ~ (K5) are axioms of probability.
 
@@ -38,12 +38,12 @@ The axiom foundation of probability theory is laid by [Kolmogorov](http://en.wik
 
 # Reference
 
----
+-----
 
 * [Wikipedia: Probability space](http://en.wikipedia.org/wiki/Probability_space)
 
 * [Etone, Randomized Algorithm: Probability Space](http://tcs.nju.edu.cn/wiki/index.php/%E9%9A%8F%E6%9C%BA%E7%AE%97%E6%B3%95_(Fall_2011)/Probability_Space)
 
----
+-----
 
 ☯ Yinyanghu, 2013

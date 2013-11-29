@@ -12,7 +12,7 @@ tags: Linux, Keyboard, OS, CS
 
 # History
 
----
+-----
 
 SysRq的全称是[System Request](http://en.wikipedia.org/wiki/System_request)，他的出现可以追溯到[IBM System/370 mainframe computer](http://en.wikipedia.org/wiki/System/370)。
 
@@ -22,7 +22,7 @@ SysRq的全称是[System Request](http://en.wikipedia.org/wiki/System_request)�
 
 # Magic SysRq Key
 
----
+-----
 
 Linux不愧是世界上最优秀的OS Kernel之一！这帮老Geeks、老Hackers向来不忘记老祖宗留下的东西。于是在Linux Kernel中便有了[Magic SysRq Key](http://en.wikipedia.org/wiki/Magic_SysRq_key)这个玩意儿。
 
@@ -69,7 +69,7 @@ echo b > /proc/sysrq-trigger
 
 # Reference
 
----
+-----
 
 * [Wikipedia: Magic SysRq Key](http://en.wikipedia.org/wiki/Magic_SysRq_key)
 
@@ -83,6 +83,6 @@ echo b > /proc/sysrq-trigger
 
 * [REISUB - the gentle Linux restart](http://kember.net/articles/reisub-the-gentle-linux-restart/)
 
----
+-----
 
 ☯ Yinyanghu, 2013

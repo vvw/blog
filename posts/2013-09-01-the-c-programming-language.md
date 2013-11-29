@@ -6,7 +6,7 @@ tags: C, Unix, Book, Note, Ritchie, Kernighan, Programming
 
 # Overture
 
----
+-----
 
 最近闲来无事 于是随手那了本薄书来看 家中和计算机相关的书中最薄的书就是这本《C程序设计语言》了 这本书还是我在学校里回收的废弃书中捡来的 扉页上写着一行字`JSL 101130039` 通过在学校Database中的查阅 曾经这本书的主人应该是一个叫*吉诗鹭*的学化学的妹子(我还真是无聊啊。。。) 虽然是妹子我还是要坚持我一贯的传统 鄙视一下这个不懂得珍惜书的妹子 当然学化学的人不愿意留着这类书 我也表示理解 不管怎么说这书到了我的手上 它也算是实现了它的价值 我的废话真是越来越多了。。。
 
@@ -24,7 +24,7 @@ C language之父 大师K&R写的书 自然要怀着一种崇敬的心来阅读�
 
 # Chapter 1: A Tutorial Introduction
 
----
+-----
 
 #### `main()`: undeclared return type are taken as `int`
 
@@ -50,7 +50,7 @@ C language之父 大师K&R写的书 自然要怀着一种崇敬的心来阅读�
 
 # Chapter 2 - Types, Operators and Expressions
 
----
+-----
 
 #### Variable Names
 
@@ -137,7 +137,7 @@ Integer vs. Array of Char
 
 # Chapter 3 - Control Flow
 
----
+-----
 
 #### `,` vs. `;`
 
@@ -187,7 +187,7 @@ void shellsort(int v[], int n)
 
 # Chapter 4 - Functions and Program Structure
 
----
+-----
 
 #### The Minimal Function
 
@@ -325,7 +325,7 @@ void swap(int v[], int i, int j)
 
 # Chapter 5 - Pointers and Arrays
 
----
+-----
 
 Pointers are much used in C, partly because they are sometimes the only way to express a computation, and partly because they usually lead to more compact and efficient code than can be obtained in other ways.
 
@@ -383,7 +383,7 @@ int (*pf)(); /* pf: pointer to function returning int */
 
 # Chapter 6 - Structures
 
----
+-----
 
 #### Initialize
 
@@ -482,7 +482,7 @@ struct {
 
 # Chapter 7 - Input and Output
 
----
+-----
 
 #### Formatted Output - `printf`
 
@@ -578,7 +578,7 @@ The function `rand()` computes a sequence of pseudo-random integers in the range
 
 # Chapter 8 - The UNIX System Interface
 
----
+-----
 
 * system call
 * file descriptor
@@ -612,7 +612,7 @@ The standard library function `fseek` is similar to `lseek` except that the firs
 
 # Appendix
 
----
+-----
 
 #### Storage Class
 
@@ -779,7 +779,7 @@ things work more smoothly; `xcat(xcat(1, 2), 3)` does produce `123`, because the
 
 # Algorithms in this book
 
----
+-----
 
 * Binary Search
 
@@ -795,7 +795,7 @@ things work more smoothly; `xcat(xcat(1, 2), 3)` does produce `123`, because the
 
 # Good Examples
 
----
+-----
 
 * wc(Unix)
 
@@ -809,7 +809,7 @@ things work more smoothly; `xcat(xcat(1, 2), 3)` does produce `123`, because the
 
 # Standard Library
 
----
+-----
 
 * `<assert.h>`: Diagnostics
 * `<ctype.h>`: Character Class Tests
@@ -827,6 +827,6 @@ things work more smoothly; `xcat(xcat(1, 2), 3)` does produce `123`, because the
 * `<string.h>`: String Functions
 * `<time.h>`: Date and Time Functions
 
----
+-----
 
 ☯ Yinyanghu, 2013
