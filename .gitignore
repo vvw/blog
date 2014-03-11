@@ -3,4 +3,5 @@ elixir
 *.o
 _site
 _cache
-Publish
+Online
+about
