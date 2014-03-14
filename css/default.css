@@ -1,6 +1,7 @@
 body {
     background-color: #DEDEDE;
-    font-family: ABeeZee, Helvetica, sans-serif;
+    font-family: Comic Sans MS, Helvetica, ABeeZee, sans-serif;
+    font-style: normal;
     margin: auto;
     max-width: 70em;
     min-width: 20em;
