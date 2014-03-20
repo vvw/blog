@@ -156,6 +156,8 @@ Also several cases:
 
 * [Wikipedia: Hindley-Milner type system](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system)
 
+* University of Waterloo, [CS442 Lecture Note](https://www.student.cs.uwaterloo.ca/~cs442/handouts/03-typeinf.pdf)
+
 * [Lecture 22: Type Inference and Unification](http://inst.eecs.berkeley.edu/~cs164/sp11/lectures/lecture22.pdf)
 
 * [Lecture 26: Type Inference and Unification](http://www.cs.cornell.edu/courses/cs3110/2011sp/lectures/lec26-type-inference/type-inference.htm)
