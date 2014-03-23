@@ -1,7 +1,7 @@
 ---
 title: Type Inference: Algorithm W and Algorithm U
 author: Yinyanghu
-tags: Algorithm, Lambda Calculus, Type Inference, Logic, Polymorphism, Type System, Hindley-Milner
+tags: Algorithm, Lambda Calculus, Type Inference, Logic, Polymorphism, Type System, Hindley-Milner, Programming Language
 ---
 
 # Type Substitution
